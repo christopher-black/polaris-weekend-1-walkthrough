@@ -6,7 +6,8 @@
 - [x] Add logic for changing background color
 - [x] Add remaining input fields
 - [x] Create HTML table and append to that
-- [ ] Delete button
+- [x] Delete button
+- [x] Clear input fields
 
 ## Stretch
 

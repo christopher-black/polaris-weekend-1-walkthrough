@@ -6,6 +6,12 @@ function readyNow() {
     console.log('jquery is working');
     // click handlers
     $('#submit').on('click', addNewSalary);
+    $('#employee-list').on('click', '.delete-btn', removeEmployee);
+}
+
+function removeEmployee() {
+    // $(this) references the target that was clicked on
+    $(this).parent().parent().remove();
 }
 
 function addNewSalary() {
@@ -24,6 +30,7 @@ function addNewSalary() {
     row.append('<td>' + employeeId + '</td>');
     row.append('<td>' + jobTitle + '</td>');
     row.append('<td>' + salary + '</td>');
+    row.append('<td><button class="delete-btn">Remove</button></td>');
     // employee-list is the tbody
     $('#employee-list').append(row); // put row on DOM
     // // Add employee to the list
@@ -39,4 +46,8 @@ function addNewSalary() {
     } else {
         $('#monthly-cost').removeClass('highlight');
     }
+
+    // clear input fields
+    // input fields that are a child of employee-form
+    $('#employee-form input').val('');
 }
