@@ -16,12 +16,22 @@ function addNewSalary() {
     let salary = $('#salary').val();
     monthlyCost += salary / 12;
     console.log(salary);
-    // Add employee to the list
-    $('#employee-list').append('<li>' + firstName + 
-                                      lastName + 
-                                      employeeId +
-                                      jobTitle + 
-                                      salary + '</li>');
+    // Creates a tr that we can append later 
+    let row = $('<tr></tr>'); 
+    // Append to that row
+    row.append('<td>' + firstName + '</td>');
+    row.append('<td>' + lastName + '</td>');
+    row.append('<td>' + employeeId + '</td>');
+    row.append('<td>' + jobTitle + '</td>');
+    row.append('<td>' + salary + '</td>');
+    // employee-list is the tbody
+    $('#employee-list').append(row); // put row on DOM
+    // // Add employee to the list
+    // $('#employee-list').append('<li>' + firstName + 
+    //                                   lastName + 
+    //                                   employeeId +
+    //                                   jobTitle + 
+    //                                   salary + '</li>');
     // Update the monthly cost
     $('#monthly-cost').text('$' + monthlyCost);
     if(monthlyCost > 20000) {

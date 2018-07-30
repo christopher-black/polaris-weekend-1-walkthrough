@@ -5,7 +5,7 @@
 - [x] Append to the dom and calculate monthly cost
 - [x] Add logic for changing background color
 - [x] Add remaining input fields
-- [ ] Create HTML table and append to that
+- [x] Create HTML table and append to that
 - [ ] Delete button
 
 ## Stretch
