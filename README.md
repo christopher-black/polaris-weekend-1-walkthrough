@@ -3,7 +3,7 @@
 - [x] index file, client.js and jQuery set up
 - [x] Collect salary and print it to the console
 - [x] Append to the dom and calculate monthly cost
-- [ ] Add logic for changing background color
+- [x] Add logic for changing background color
 - [ ] Add remaining input fields
 - [ ] Create HTML table and append to that
 - [ ] Delete button

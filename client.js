@@ -16,4 +16,9 @@ function addNewSalary() {
     $('#employee-list').append('<li>' + salary + '</li>');
     // Update the monthly cost
     $('#monthly-cost').text('$' + monthlyCost);
+    if(monthlyCost > 20000) {
+        $('#monthly-cost').addClass('highlight');
+    } else {
+        $('#monthly-cost').removeClass('highlight');
+    }
 }
