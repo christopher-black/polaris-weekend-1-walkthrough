@@ -13,4 +13,4 @@
 
 - [x] Bootstrap to style the table
 - [x] Update the monthly cost when an item is deleted
-- [ ] Refactor code into functions and classes
+- [x] Refactor code into functions and classes
