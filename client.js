@@ -11,6 +11,11 @@ function readyNow() {
 
 function removeEmployee() {
     // $(this) references the target that was clicked on
+    let salary = $(this).parent().parent().find('.salary').text();
+    monthlyCost -= salary / 12;
+    // Update the dom
+    $('#monthly-cost').text('$' + monthlyCost);
+    // Remove the row
     $(this).parent().parent().remove();
 }
 
@@ -29,7 +34,7 @@ function addNewSalary() {
     row.append('<td>' + lastName + '</td>');
     row.append('<td>' + employeeId + '</td>');
     row.append('<td>' + jobTitle + '</td>');
-    row.append('<td>' + salary + '</td>');
+    row.append('<td class="salary">' + salary + '</td>');
     row.append('<td><button class="delete-btn">Remove</button></td>');
     // employee-list is the tbody
     $('#employee-list').append(row); // put row on DOM

@@ -11,6 +11,6 @@
 
 ## Stretch
 
-- [ ] Bootstrap to style the table
-- [ ] Update the monthly cost when an item is deleted
+- [x] Bootstrap to style the table
+- [x] Update the monthly cost when an item is deleted
 - [ ] Refactor code into functions and classes
