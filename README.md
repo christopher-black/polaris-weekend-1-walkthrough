@@ -1,7 +1,7 @@
 # Polaris Weekend-1 Walkthrough
 
 - [x] index file, client.js and jQuery set up
-- [ ] Collect salary and print it to the console
+- [x] Collect salary and print it to the console
 - [ ] Append to the dom and calculate monthly cost
 - [ ] Add logic for changing background color
 - [ ] Add remaining input fields
